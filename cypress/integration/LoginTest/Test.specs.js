@@ -1,24 +1,20 @@
 
-Given('I navigate to the Quincus website', () => {
-  cy.visit('https://uat.quincus.com/');
+Given('I navigate to the Orange CRM Website', () => {
+  cy.visit('https://opensource-demo.orangehrmlive.com/');
 });
 
 When('I type email in email input', () => {
-  cy.get('input[name="username"]').type('vivek.kumar@quincus.com');
-});
-
-When('I click on next button', () => {
-  cy.get('[data-automation_id="admloginnextbtn"]').click();
+  cy.get('input[name="username"]').type('Admin');
 });
 
 When('I type password in password input', () => {
-  cy.get('input[data-automation_id="admloginpasswordtxtbox"]').type('Quincus1!');
+  cy.get('input[name="password"]').type('admin123');
 });
 
 When('I click on Login button', () => {
-  cy.get('[data-automation_id="admloginwithpasswordbtn"]').click();
+  cy.get('.orangehrm-login-button').click();
 });
 
-Then('Validate the page sub title', () => {
-  cy.get('.page-subtitle').contains('Have an overview of all the modules.');
-});
+Then('I validate the page sub title', () => {
+    cy.get('.oxd-topbar-header-breadcrumb-module').should('be.visible', {timeout: 10000});
+})

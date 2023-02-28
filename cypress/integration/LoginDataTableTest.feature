@@ -1,4 +1,4 @@
-Feature: Login
+Feature: Orange CRM Website Login
 
     Scenario Outline: Login to Orange CRM Website
 

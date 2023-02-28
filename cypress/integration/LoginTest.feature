@@ -1,12 +1,11 @@
 
-Feature: Open Quincus website
+Feature: Orange CRM Website Login
 
-    I want to open Quincus website
+    I want to open Orange CRM Website & do login
 
-    Scenario: Open Quincus website
-        Given I navigate to the Quincus website
+    Scenario: Open Orange CRM Website
+        Given I navigate to the Orange CRM Website
         When I type email in email input
-        When I click on next button
         When I type password in password input
         When I click on Login button
-        Then Validate the page sub title
+        Then I validate the page sub title

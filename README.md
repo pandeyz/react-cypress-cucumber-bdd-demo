@@ -76,3 +76,5 @@ Refer this video tutorial: https://www.youtube.com/watch?v=uOpItjWtaFE&list=PLPg
 and after configuring all the settings you can run following command on terminal:
 
 ### `npx cypress open` or `npx cypress run`
+
+You can replace the command `open` with `run` preferably if you want to run it in headless mode by using `--headless` option which means it will not open the runner and it will just run the tests in the terminal.
